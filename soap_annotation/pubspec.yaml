@@ -1,0 +1,13 @@
+name: soap_annotation
+version: 0.0.4
+description: >-
+  Classes and helper functions that support SOAP code generation via the
+  `soap_serializable` package.
+homepage: https://github.com/eduardocp/soap_serializable
+author: Eduardo Carisio <eduardo.carisio@gmail.com>
+environment:
+  sdk: ">=2.3.0 <3.0.0"
+# When changing SoapSerializable class.
+# dev_dependencies:
+#   build_runner: ^1.0.0
+#   soap_serializable: ^0.0.1

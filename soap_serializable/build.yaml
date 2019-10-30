@@ -1,0 +1,16 @@
+# Read about `build.yaml` at https://pub.dev/packages/build_config
+targets:
+  $default:
+    builders:
+      soap_serializable:
+        generate_for:
+          - example/*
+
+builders:
+  soap_serializable:
+    import: "package:soap_serializable/builder.dart"
+    builder_factories: ["soapSerializable"]
+    build_extensions: { ".dart": ["soap_serializable.g.part"] }
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
